@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ca-FR">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="icon" href="./assets/IMG/favicon.svg">
+    <script src="https://kit.fontawesome.com/d0b4d9ccc9.js" crossorigin="anonymous"></script>
+    <script type="module" src="./assets/JS/main.js" defer></script>
+    <title>BOUTIQUE | VALIDATION</title>
+</head>
+<header>
+    <section class="flex flex-col">
+    <div>
+        <h4 class="text-xs md:text-base text-center text-offWhite bg-green p-3">Livraison gratuite pour les commandes de plus de 35 $!</h4>
+    </div>
+    <div class="bg-black header drop-shadow-2xl">
+        <div class= "px-6 py-3 flex flex-row justify-between lg:px-0 lg:max-w-[1000px] lg:mx-auto">
+        <div class="flex flex-col md:flex-row gap-6 md:gap-10 md:items-center">
+            <div class="flex justify-between">
+            <img class="flex w-[6rem]" src="./assets/IMG/logo.svg" alt="Logo du Café Réveil Matin">
+        
+            </div>
+        </div>
+        <div class="flex flex-row gap-10">
+            <button data-dialog="#menu-mobile" type="button" class="menu-mobile text-offWhite md:hidden" role="img" aria-label="Bouton de fermeture du menu mobile"><i class="fa-solid fa-bars fa-xl" alt="menu-mobile"></i></button>
+            <ul class="hidden md:flex gap-3 lg:gap-10 py-3">
+            <li class="text-offWhite pt-1"><a href="./index.html">Accueil</a></li>
+            <li class="text-offWhite pt-1"><a href="./products.html">Produits</a></li>
+            <li class="text-offWhite pt-1"><a href="./contact.html">Contactez-nous</a></li>
+            <li class="text-offWhite pt-1"><a href="./about.html">À propos</a></li>
+            </ul>
+            <button data-dialog="#cart"><i class="fa-solid fa-cart-shopping text-offWhite fa-xl"></i></button>
+        </div>
+        </div>
+    </div>
+    <div class="bg-green py-6" >
+        <div class=" flex justify-center md:justify-start lg:max-w-[1000px] lg:mx-auto md:gap-6">
+        </div>
+    </div>
+    </section>
+</header>
+<body class="bg-green">
+    <main class="m-auto align-middle pt-40 text-offWhite">
+        <h1 class="font-black text-3xl text-center">Merci!<br>Nous avons bien reçu votre message!</h1>
+    </main>
+</body>
+
+</html>

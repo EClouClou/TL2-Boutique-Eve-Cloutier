@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*DIALOG*/
+body:has(.dialog[open]) {
+    overflow-y: hidden;
+}
+
+.dialog {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.dialog[open] {
+    display: grid;
+    grid-template-columns: 100%;
+    animation: fadeIn 0.2s forwards;
+    display: block;
+}
+
+.dialog[closing] {
+    animation: fadeOut 0.2s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/*MODAL*/
+.modal.open {
+    display: block;
+}
+
+.modal .product-short-description {
+    display: none;
+}
+
+.modal .btn-details {
+    display: none;
+}

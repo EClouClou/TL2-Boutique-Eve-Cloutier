@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ca-FR">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="icon" href="./assets/IMG/favicon.svg">
+    <script src="https://kit.fontawesome.com/d0b4d9ccc9.js" crossorigin="anonymous"></script>
+    <script type="module" src="./assets/JS/main.js" defer></script>
+    <title>BOUTIQUE | À PROPOS</title>
+</head>
+<header>
+    <section class="flex flex-col">
+        <div>
+        <h3 class="text-xs md:text-base text-center text-offWhite bg-green p-3">Livraison gratuite pour les commandes de plus de 35 $!</h3>
+        </div>
+        <div class="bg-black header drop-shadow-2xl">
+        <div class= "px-6 py-3 flex flex-row justify-between lg:px-0 lg:max-w-[1000px] lg:mx-auto">
+            <div class="flex flex-col md:flex-row gap-6 md:gap-10 md:items-center">
+            <div class="flex justify-between">
+                <img class="flex w-[6rem]" src="./assets/IMG/logo.svg" alt="Logo du Café Réveil Matin">
+                
+            </div>
+            </div>
+            <div class="flex flex-row gap-10">
+            <button data-dialog="#menu-mobile" type="button" class="menu-mobile text-offWhite md:hidden" role="img" aria-label="Bouton de fermeture du menu mobile"><i class="fa-solid fa-bars fa-xl" alt="menu-mobile"></i></button>
+            <ul class="hidden md:flex gap-3 lg:gap-10 py-3">
+                <li class="text-offWhite pt-1"><a href="./index.html">Accueil</a></li>
+                <li class="text-offWhite pt-1"><a href="./products.html">Produits</a></li>
+                <li class="text-offWhite pt-1"><a href="./contact.html">Contactez-nous</a></li>
+                <li class="text-offWhite pt-1"><a href="./about.html">À propos</a></li>
+            </ul>
+            <button data-dialog="#cart"><i class="fa-solid fa-cart-shopping text-offWhite fa-xl"></i></button>
+            </div>
+        </div>
+        </div>
+        <div class="bg-green py-6" >
+            <div class=" flex justify-center md:justify-start lg:max-w-[1000px] lg:mx-auto md:gap-6">
+                <div></div>
+                <div class="flex items-center bg-offWhite rounded-2xl text-black  h-8 md:w-[18rem]">
+                <i class="fa-solid fa-magnifying-glass px-3"></i>
+                <input class="search bg-offWhite rounded-2xl" type="text" name="search" id="search">
+                </div>
+            </div>
+        </div>
+    </section>
+    </header>
+<main class="bg-beige px-6 lg:max-w-[1000px] mx-auto gap-10 pt-10 md:pt-20">
+    <h3 class="font-bold text-4xl pb-14">À propos</h3>
+    <div class="px-10">
+        <p class="py-6">Les sources utilisées pour faire ce dernier projet dans le cadre du cours d’interface mobile sont similaires au précédant travail long, soit CSS Tricks, W3Schools, SheCodes et MDN Web Docs et mes ateliers et notes de cours antérieurs. Mais en grande majorité cette fois-ci, j’ai d’abord utilisé le code en Javascript provenant de mon premier travail long que j’ai tenté d’adapter aux nouvelles demandes ainsi que la documentation en ligne sur le site de Tailwindcss pour styliser mes éléments directement dans les fichiers HTML ou bien dans les fichiers Javascript.</p>
+        <p class="py-6">J’ai pu grandement apprécier l’outil Tailwins qui propose la stylisation rapide par classe et de manière très efficace, simple et concise. Le tout, sans ajouter de styles via CSS et sans à devoir consulter une multitude de fichiers pour trouver où tel élément est mis en forme.</p>
+        <p class="py-6">Aussi, leur documentation est claire et on y trouve en un instant la réponse à nos questions. De plus, leurs classes sont intuitives et facile à retenir, car très constantes.</p>
+        <p class="py-6">Niveau performance, Tailwind est aussi tellement efficace, ce qui rend le travail beaucoup plus agréable, car l’on passe moins de temps à attendre que le site s’actualise. </p>
+        <p class="pt-6 pb-32">En contrepartie, j’ai manqué de temps pour tout implémenter les requis au travail. Des échéances des dernières semaines ont grandement été bousculées par le début des cours de projet et d’audiovisuel, ce qui m’a laissé peu de temps pour remettre un travail complété, et ce, malgré le prolongement du délai jusqu’au 16 juillet. Comble de malheur, le projet ne fonctionne pas dans Vercel. Je n’ai pas eu le temps non plus d’investiguer sur ce problème.</p>
+    </div>
+
+    <div id="menu-mobile" class="dialog header__menu-dialog" aria-role="dialog">
+        <section class="overlay--close bg-offWhite h-screen w-[85%] flex flex-col">
+        <div class="flex justify-between bg-green p-14">
+        <h3 class="font-bold text-xl text-offWhite">Menu</h3>
+        <button data-dialog="#menu-mobile" class="menu-mobile__btn--close text-offWhite"><i class="fa-solid fa-xmark fa-xl"></i>
+        </button>
+        </div>
+        <nav class="menu-mobile">
+        <ul class="py-3">
+            <li class="px-12 py-6 font-semibold text-lg"><a href="./index.html">Accueil</a></li>
+            <li class="px-12 py-6 font-semibold text-lg"><a href="./products.html">Produits</a></li>
+            <li class="px-12 py-6 font-semibold text-lg"><a href="./contact.html">Contactez-nous</a></li>
+            <li class="px-12 py-6 font-semibold text-lg"><a href="./about.html">À propos</a></li>
+        </ul>
+        </nav>
+    </section>
+    </div>
+</main>
+<footer class="bg-black p-3">
+    <div class="flex flex-col py-3 md:flex-row justify-center md:justify-between px-10 lg:px-0 lg:max-w-[1000px] mx-auto gap-6 lg:gap-0 text-center md:text-left">
+        <div class="colonne-un flex justify-center md:justify-between items-center">
+        <div class="flex flex-col justify-center md:justify-between gap-6 lg:gap-0 text-center">
+            <div class="flex justify-center md:justify-start md:pb-3"><img class="flex w-[8rem]" src="./assets/IMG/logo.svg" alt="Logo du Café Réveil Matin">
+            </div>
+            <section class="medias flex flex-col items-center md:flex-row gap-6 pb-3">
+            <div>
+                <h3 class="text-offWhite md:font-bold text-xl">Suivez-nous!</h3>
+            </div>
+            <div class="flex items-center gap-6 text-offWhite">
+                <i class="fa-brands fa-facebook fa-xl"></i>
+                <i class="fa-brands fa-instagram fa-xl"></i>
+                <i class="fa-brands fa-linkedin fa-xl"></i>
+            </div>
+            </section>
+            <section class="flex flex-col">
+            <div class="flex gap-1">
+                <p class="text-offWhite flex gap-1"><i class="fa-solid fa-copyright pt-1"></i>2024 Réveil-Matin inc.</p>
+            </div>
+            </section>
+        </div>
+        </div>
+        <div class="colonne-deux flex gap-6 lg:gap-0 justify-center md:justify-start">
+        <div class="flex flex-col md:justify-between text-center md:text-left">
+            <section">
+            <form id="newsletter-form" class="novalidate flex justify-center flex-col">
+                <label class="text-offWhite " for="eMail">Abonnez-vous à notre infolettre</label>
+            <div class="flex flex-row justify-between gap-1 bg-green pr-2 rounded-r-md mt-3">
+                <input class="w-[13rem] md:w-[15rem] p-2 text-xs md:text-base" type="email" id="email" name="email" autocomplete="email" placeholder="exemple@exemple.com">
+                <p class="success-message text-offWhite hidden p-2 text-xs">Merci de votre inscription!</p>
+                <button class="btn-submit text-offWhite p-2 flex" type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+            </form>
+            </section>
+            <section class="flex flex-col pt-6">
+            <button class="text-offWhite flex gap-3 justify-center md:justify-start"><a href="./contact.html"><p>Écrivez-nous</p></a><i class="fa-solid fa-paper-plane"></i></i></button>
+            </section>
+        </div>
+        </div>
+        <div class="colonne-trois">
+        <section class="gap-6 lg:gap-0">
+            <ul class="flex flex-col justify-start gap-1">
+            <li class="text-offWhite pt-1"><a href="./index.html">Accueil</a></li>
+            <li class="text-offWhite pt-1"><a href="./products.html">Produits</a></li>
+            <li class="text-offWhite pt-1"><a href="./contact.html">Contactez-nous</a></li>
+            <li class="text-offWhite pt-1"><a href="./about.html">À propos</a></li>
+            </ul>
+        </section>
+        </div>
+    </div>
+    </footer>
+</html>

@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ca-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="icon" href="./assets/IMG/favicon.svg">
+    <script src="https://kit.fontawesome.com/d0b4d9ccc9.js" crossorigin="anonymous"></script>
+    <script type="module" src="./assets/JS/main.js" defer></script>
+  <title>BOUTIQUE | ACCUEIL</title>
+  </head>
+  <body>
+    <header>
+      <section class="flex flex-col">
+        <div>
+          <h4 class="text-xs md:text-base text-center text-offWhite bg-green p-3">Livraison gratuite pour les commandes de plus de 35 $!</h4>
+        </div>
+        <div class="bg-black header drop-shadow-2xl">
+          <div class= "px-6 py-3 flex flex-row justify-between lg:px-0 lg:max-w-[1000px] lg:mx-auto">
+            <div class="flex flex-col md:flex-row gap-6 md:gap-10 md:items-center">
+              <div class="flex justify-between">
+                <img class="flex w-[6rem]" src="./assets/IMG/logo.svg" alt="Logo du Café Réveil Matin">
+                
+              </div>
+            </div>
+            <div class="flex flex-row gap-10">
+              <button data-dialog="#menu-mobile" type="button" class="menu-mobile text-offWhite md:hidden" role="img" aria-label="Bouton de fermeture du menu mobile"><i class="fa-solid fa-bars fa-xl" alt="menu-mobile"></i></button>
+              <ul class="hidden md:flex gap-3 lg:gap-10 py-3">
+                <li class="text-offWhite pt-1"><a href="./index.html">Accueil</a></li>
+                <li class="text-offWhite pt-1"><a href="./products.html">Produits</a></li>
+                <li class="text-offWhite pt-1"><a href="./contact.html">Contactez-nous</a></li>
+                <li class="text-offWhite pt-1"><a href="./about.html">À propos</a></li>
+              </ul>
+              <button data-dialog="#cart"><i class="fa-solid fa-cart-shopping text-offWhite fa-xl"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="bg-green py-6" >
+          <div class=" flex justify-center md:justify-start lg:max-w-[1000px] lg:mx-auto md:gap-6">
+            <div></div>
+            <div class="flex items-center bg-offWhite rounded-2xl text-black  h-8 md:w-[18rem]">
+              <i class="fa-solid fa-magnifying-glass px-3"></i>
+              <input class="search bg-transparent rounded-2xl" type="text" name="search" id="search">
+            </div>
+          </div>
+        </div>
+<section class="banner py-16 lg:bg-brown">
+  <div class="banner-left flex flex-col md:flex-row justify-center items-center">
+    <div class="banner__left_content flex flex-col md:w-[50%] lg:text-offWhite">
+      <h1 class="text-5xl md:text-6xl text-center md:text-left">Réveil<span class="font-bold">Matin</span></h1>
+      <p class="p-3 text-center md:text-left md:px-0">Le café est votre meilleur allié, que ce soit pour bien commencer la journée ou afin prendre un moment pour souffler et de vous détendre un peu.</p>
+    </div>
+    <div class="banner-right flex">
+      <picture class="">
+        <source class="" media="(min-width: 1024px)" srcset="./assets/IMG/cafetiere-2.svg" alt="Cafetière">
+        <source class="w-[80%]" media="(min-width: 768px)" srcset="./assets/IMG/cafetiere-2.svg" alt="Étoile de mer"/>
+        <img class="w-[80%] mx-auto" src="./assets/IMG/cafetiere-1.svg" alt="Cafetière">
+      </picture>
+    </div>
+  </div>
+</section>
+    </header>
+    <main class="bg-beige px-6 lg:max-w-[1000px] mx-auto gap-10 pt-10 md:pt-20">
+      <h3 class="font-bold text-4xl md:col-span-3 text-center md:text-left">Avantages</h3>
+      <div class="avantages flex flex-col md:grid md:grid-cols-3 items-baseline place-content-center pb-20">
+        <div class="avantage-un py-14 px-6">
+          <div><img class="w-[50%] mx-auto py-6" src="./assets/IMG/coeur-1.svg" alt=".Coeur"></div>
+          <div>
+            <h4 class="font-bold text-xl text-center md:text-left pb-6">Riche en antioxydants</h4>
+            <p class="text-center md:text-left">Le café est riche en antioxydants, particulièrement en polyphénols, aidant ainsi notre corps à combattre les maladies et à rester en santé.</p>
+          </div>
+        </div>
+        <div class="avantage-deux py-14 px-6">
+          <div><img class="w-[50%] mx-auto py-6" src="./assets/IMG/coeur-2.svg" alt=".Coeur"></div>
+          <div>
+            <h4 class="font-bold text-xl text-center md:text-left pb-6">Stimuler le cerveau</h4>
+            <p class="text-center md:text-left">Riche en caféine, il stimule notre corps, ce qui aide à améliorer nos fonctions cognitives, notre mémoire et notre concentration.</p>
+          </div>
+        </div>        
+        <div class="avantage-trois py-14 px-6">
+          <div><img class="w-[50%] mx-auto py-6" src="./assets/IMG/coeur-3.svg" alt=".Coeur"></div>
+          <div>
+            <h4 class="font-bold text-xl text-center md:text-left pb-6">Protège contre certaines maladies</h4>
+            <p class="text-center md:text-left">Plusieurs études soulignent, sans preuves définitives, les bienfaits de la consommation de café sur la santé en diminuant la mortalité due à certains cancer, aux AVC et aux maladies cardiaques.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-bold text-4xl">Produits vedettes</h3>
+        <div class="favoris-container justiy-content grid grid-cols-1 min-w-[250px] md:grid-cols-4 items-baseline gap-20 place-content-center py-10">
+        </div>
+      </div>
+        <div id="cart" class="dialog">
+          <div class="w-[350px] bg-offWhite justify-self-end">
+            <h3>Cart</h3>
+            <div class="cart_items"></div>
+            <div class="cart_total">$0.00</div>
+          </div>
+        </div>
+        <div id="menu-mobile" class="dialog header__menu-dialog" aria-role="dialog">
+          <section class="overlay--close bg-offWhite h-screen w-[95%] flex flex-col">
+          <div class="flex justify-between bg-green p-14">
+            <h3 class="font-bold text-xl text-offWhite">Menu</h3>
+            <button data-dialog="#menu-mobile" class="menu-mobile__btn--close text-offWhite"><i class="fa-solid fa-xmark fa-xl"></i>
+            </button>
+          </div>
+          <nav class="menu-mobile">
+            <ul class="py-3">
+              <li class="px-12 py-6 font-semibold text-lg"><a href="./index.html">Accueil</a></li>
+              <li class="px-12 py-6 font-semibold text-lg"><a href="./products.html">Produits</a></li>
+              <li class="px-12 py-6 font-semibold text-lg"><a href="./contact.html">Contactez-nous</a></li>
+              <li class="px-12 py-6 font-semibold text-lg"><a href="./about.html">À propos</a></li>
+            </ul>
+          </nav>
+        </section>
+        </div>
+        <div class="modal hidden fixed z-1 ml-0 mt-0 w-full h-full overflow-auto bg-black bg-[rgba(0,0,0,0.4)]">
+          <div class="modal-content md:w-[60%] lg:w-[50%]">
+              <span class="modal-close bg-offWhite float-right text-2xl font-bold hover:bg-black hover:decoration-none hover:cursor-pointer focus:bg-black focus:decoration-none focus:cursor-pointer"></span>
+          </div>
+      </div>
+    </main>
+    <footer class="bg-black p-3">
+      <div class="flex flex-col py-3 md:flex-row justify-center md:justify-between px-10 lg:px-0 lg:max-w-[1000px] mx-auto gap-6 lg:gap-0 text-center md:text-left">
+        <div class="colonne-un flex justify-center md:justify-between items-center">
+          <div class="flex flex-col justify-center md:justify-between gap-6 lg:gap-0 text-center">
+            <div class="flex justify-center md:justify-start md:pb-3"><img class="flex w-[8rem]" src="./assets/IMG/logo.svg" alt="Logo du Café Réveil Matin">
+            </div>
+            <section class="medias flex flex-col items-center md:flex-row gap-6 pb-3">
+              <div>
+                <h3 class="text-offWhite md:font-bold text-xl">Suivez-nous!</h3>
+              </div>
+              <div class="flex items-center gap-6 text-offWhite">
+                <i class="fa-brands fa-facebook fa-xl"></i>
+                <i class="fa-brands fa-instagram fa-xl"></i>
+                <i class="fa-brands fa-linkedin fa-xl"></i>
+              </div>
+            </section>
+            <section class="flex flex-col">
+              <div class="flex gap-1">
+                <p class="text-offWhite flex gap-1"><i class="fa-solid fa-copyright pt-1"></i>2024 Réveil-Matin inc.</p>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="colonne-deux flex gap-6 lg:gap-0 justify-center md:justify-start">
+          <div class="flex flex-col md:justify-between text-center md:text-left">
+            <section">
+              <form id="newsletter-form" class="novalidate flex justify-center flex-col">
+                <label class="text-offWhite " for="eMail">Abonnez-vous à notre infolettre</label>
+              <div class="flex flex-row justify-between gap-1 bg-green pr-2 rounded-r-md mt-3">
+                <input class="w-[13rem] md:w-[15rem] p-2 text-xs md:text-base" type="email" id="email" name="email" autocomplete="email" placeholder="exemple@exemple.com">
+                <p class="success-message text-offWhite hidden p-2 text-xs">Merci de votre inscription!</p>
+                <button class="btn-submit text-offWhite p-2 flex" type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+              </div>
+            </form>
+            </section>
+            <section class="flex flex-col pt-6">
+              <button class="text-offWhite flex gap-3 justify-center md:justify-start"><a href="./contact.html"><p>Écrivez-nous</p></a><i class="fa-solid fa-paper-plane"></i></i></button>
+            </section>
+          </div>
+        </div>
+        <div class="colonne-trois">
+          <section class="gap-6 lg:gap-0">
+            <ul class="flex flex-col justify-start gap-1">
+              <li class="text-offWhite pt-1"><a href="./index.html">Accueil</a></li>
+              <li class="text-offWhite pt-1"><a href="./products.html">Produits</a></li>
+              <li class="text-offWhite pt-1"><a href="./contact.html">Contactez-nous</a></li>
+              <li class="text-offWhite pt-1"><a href="./about.html">À propos</a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
