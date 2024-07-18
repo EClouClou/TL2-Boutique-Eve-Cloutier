@@ -31,7 +31,7 @@ export default class Product {
         imgHtml.textContent = this.img;
         imgHtml.setAttribute('src', this.img);
         imgHtml.setAttribute('alt', this.name);
-        imgHtml.className = 'max-w-[80%] md:max-w-[60%] lg:max-w-[80%]';
+        imgHtml.className = 'max-w-[200px] md:max-w-[200px] lg:max-w-[220px]';
 
         nameHtml.textContent = this.name; 
         nameHtml.className = 'font-bold text-blackBrown text-base pt-3';
