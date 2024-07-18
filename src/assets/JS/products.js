@@ -2,7 +2,7 @@ import Product from "./Product";
 
 const products = [
     new Product(
-        '../assets/IMG/expresso.svg',
+        'url(assets/IMG/expresso.svg)',
         'Expresso',
         'En savoir plus',
         'L\'expresso est un type de café célèbre d\'Italie. Le produit final est un café épais avec une mousse crémeuse sur le dessus. En raison de son épaisseur et de son taux élevé de caféine par unité, il sert de base pour d\'autres boissons.',
