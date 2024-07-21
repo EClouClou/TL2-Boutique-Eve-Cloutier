@@ -3,9 +3,7 @@ const articleList = document.querySelectorAll('.article-list');
 
 const cards = [...articleList];
 
-/**
- * @param {boolean} boolean
- */
+// Js doc inutile -0.5
 /*inputSearch.addEventListener('input', (e) => {
     cards.forEach(card => {
 
