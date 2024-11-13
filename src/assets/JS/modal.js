@@ -1,13 +1,11 @@
 import products from "./products";
 
-const detailsContainer = document.querySelector('.modal');
+//code inutile -0.5
 const modal = document.querySelector('.modal');
 const modalContent = document.querySelector('.modal-content');
 const modalClose = document.querySelector('.modal-close');
 
-/**
- * @param {Array} Array
- */
+// Js doc inutile -0.5
 document.querySelectorAll('.btn-details').forEach(button => {
     button.addEventListener('click', event => {
         const productName = event.target.getAttribute('data-product');
@@ -22,9 +20,7 @@ document.querySelectorAll('.btn-details').forEach(button => {
     });
 });
 
-/**
- * @param {boolean} boolean
- */
+// Js doc inutile -0.5
 modalClose.addEventListener('click', () => {
     modal.classList.remove('open');
 });

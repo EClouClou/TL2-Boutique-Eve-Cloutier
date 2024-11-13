@@ -34,7 +34,7 @@ import './dialog';
 import Cart from './Cart';
 import LineItem from './LineItem';
 import Product from './Product';
-import Favori from './Favori';
+// code inutile -0.5
 import './newsletter';
 import './search';
 import './contact';
